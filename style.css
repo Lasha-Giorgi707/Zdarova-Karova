@@ -48,13 +48,13 @@ color: white;
     color: black;
     font-size: 25px;
     position: absolute;
-    right: 260px;
+    right: 380px;
     gap: 30px;
 }
 .bag p {
     position: absolute;
     top: 28px;
-    right: 260px;
+    right: 381px;
     font-size: 14px;
     color:#FFF97D;
 }
@@ -63,7 +63,7 @@ color: white;
     width: 20px;
     height: 20px;
     position: absolute;
-    right: 255px;
+    right: 374px;
     opacity: 0;
 }
 
@@ -158,7 +158,7 @@ li i {
 }
 
 .li3 {
-    padding-right: 50px;
+    padding-right: 155px;
 }
 
 .section1 {
@@ -191,6 +191,7 @@ background-size: cover;
 .left div {
     position: absolute;
     top: 35%;
+    left: 10%;
     width: 670px;
 }
 .left p {
@@ -329,6 +330,72 @@ background-size: cover;
     background-color: #FFF97D;
     color: #4b573e;
     transition: 0.5s;
+}
+
+
+.inputmain {
+    width: 100%;
+    background-color: #f0c0d0;
+    height: 500px;
+    color: #4b573e;
+    display: flex;
+}
+
+.leftinput {
+    width: 60%;
+}
+
+.leftinput h1 {
+font-size: 60px;
+padding-bottom: 50px;
+padding-left: 50px;
+}
+
+.one {
+padding-left: 60px;
+    font-size: 20px;
+}
+
+.two {
+    padding-left: 60px;
+    width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputlabel {
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+.inputlabel input {
+    width: 400px;
+    border-radius: 15px;
+    border: 1px solid #4b573e;
+    background-color: #f0c0d0;
+    padding: 5px 10px 5px 10px;
+    
+}
+
+.inputlabel textarea {
+background-color: #f0c0d0;
+border-radius: 20px;
+width: 400px;
+height: 100px;
+resize: none;
+}
+
+form button {
+    margin-top: 50px;
+}
+
+.inputlabel label {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 
