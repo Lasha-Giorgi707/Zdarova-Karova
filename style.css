@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Lexend;
+}
+
+
+
+@font-face {
+    font-family:Lexend;
+    src: url(Lexend-VariableFont_wght.ttf);
 }
 
 
@@ -54,7 +62,7 @@ color: white;
 .bag p {
     position: absolute;
     top: 28px;
-    right: 381px;
+    right: 380px;
     font-size: 14px;
     color:#FFF97D;
 }
@@ -65,6 +73,7 @@ color: white;
     position: absolute;
     right: 374px;
     opacity: 0;
+    cursor: pointer;
 }
 
 .bag2 {
@@ -95,16 +104,7 @@ nav .bag input:checked ~ .bag2 {
     color: inherit;
 }
 
-.bag2 input {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    width: 20px;
-    height: 20px;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 2;
-}
+
 
 
 .bag2 h2 {
@@ -173,15 +173,16 @@ height: 900px;
 
 .right {
     background-image: url("https://static.wixstatic.com/media/f8596d7ebf694179aa11682b834670f2.jpg/v1/fill/w_1476,h_2340,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f8596d7ebf694179aa11682b834670f2.jpg");
-width: 40%;
+width: 50%;
 height: 900px;
 background-size: cover;
+border: 1px solid #4b573e;
 }
 
 .left {
     background-color: #FFF97D;
     align-items: center;
-    width: 60%;
+    width: 50%;
     height: 900px;
     color: #4b573e;
     position: relative;
@@ -191,15 +192,21 @@ background-size: cover;
 .left div {
     position: absolute;
     top: 35%;
-    left: 10%;
+    left: 5%;
     width: 670px;
 }
+
 .left p {
     font-size: 20px;
 }
 
+.left .helli {
+    width: 400px;
+    position: absolute;
+    left: 20%;
+}
+
 .left h1 {
-    
     font-size: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -210,7 +217,7 @@ background-size: cover;
 
 
 .left button {
-    margin-top: 30px;
+    margin-top: 130px;
     background-color: #f0c0d0;
     border: 1px solid #4b573e;
     border-radius: 20px;
@@ -336,7 +343,7 @@ background-size: cover;
 .inputmain {
     width: 100%;
     background-color: #f0c0d0;
-    height: 500px;
+    height: 700px;
     color: #4b573e;
     display: flex;
 }
@@ -349,11 +356,13 @@ background-size: cover;
 font-size: 60px;
 padding-bottom: 50px;
 padding-left: 50px;
+padding-top: 60px;
 }
 
 .one {
 padding-left: 60px;
     font-size: 20px;
+    padding-bottom: 20px;
 }
 
 .two {
@@ -377,7 +386,7 @@ form {
     border-radius: 15px;
     border: 1px solid #4b573e;
     background-color: #f0c0d0;
-    padding: 5px 10px 5px 10px;
+    padding: 10px 10px 10px 10px;
     
 }
 
@@ -391,12 +400,31 @@ resize: none;
 
 form button {
     margin-top: 50px;
+    background-color: #4b573e;
+    color: white;
+    padding: 10px 0 10px 0;
+    border-radius: 20px;
+    border: 1px solid #4b573e;
+    transition: background-color 0.32s ease;
+}
+
+form button:hover {
+    background-color: #FFF97D;
+    color: #4b573e;
+    text-decoration: underline;
+    transition: 0.3s ;
 }
 
 .inputlabel label {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
+
+
+
+
+
+
 
 
 
