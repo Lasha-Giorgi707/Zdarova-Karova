@@ -217,74 +217,28 @@ li i {
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 500px;
 }
 
-main div {
-    height: 600px;
-    width: 400px;
+.grod {
+    width: 100%;
+    height: 400px;
+    grid-column: span 1;
+    background-color: inherit;
     border: 1px solid black;
-    z-index: 9;
-    background-color: #FFF97D;
-    text-decoration: none;
-    color: #4b573e;
-    z-index: 500;
 }
 
-.mainn .h11 {
-    text-align: center;
-    padding-bottom: 50px;
-    padding-top: 30px;
-    text-decoration: none;
-}
 
-main h1 {
-    padding-top: 20px;
-    padding-left: 20px;
-}
 
-main img {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
 
-main p {
-    padding-top: 20px;
-    padding-left: 20px;
-}
 
-main hr {
-  margin-top: 20px;
-  align-items: center;
-  width: 300px;
-  text-align: center;
-  margin-left: 30px;
-  border: 1px solid #4b573e;
-}
 
-main button {
-    margin-top: 40px;
-    padding: 10px 15px 10px 15px;
-    margin-left: 20px;
-    background-color: black;
-    color: #FFF97D;
-}
 
-main button:hover {
-    text-decoration: underline;
-}
 
-main img:hover {
-    filter: brightness(60%);
-    cursor: pointer;
-}
 
-.lesson img {
-    width: 100%;
-}
 
 footer {
     height: 600px;
@@ -451,50 +405,7 @@ footer h1 {
         cursor: pointer;
         z-index: 1001;
     }
-    
-    .grid {
-  display: flex;
-  flex-direction: column;
-  padding: 0 16px;
-  box-sizing: border-box;
-}
-
-.grid > div {
-  width: 100%;
-  min-height: 140px;
-  border: 1px solid #4b573e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  background: transparent;
-  position: relative;
-}
-
-.grid div h1 {
-  position: static;
-  top: auto;
-  left: auto;
-  text-align: center;
-  font-size: 1.4rem;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.maingrid {
-  height: auto;
-  padding-bottom: 24px;
-}
-
-.maingrid button {
-  position: static;
-  display: block;
-  margin: 18px auto 32px;
-  left: auto;
-  top: auto;
-}
-
-.gridmain {
+    .gridmain {
   display: flex;
   flex-direction: column;
   padding: 16px;
@@ -547,21 +458,19 @@ main {
 }
 
 main div {
-  width: 92%;           /* nearly full width with small gutters */
-  max-width: 420px;     /* keep original card max width */
+  width: 92%;           
+  max-width: 420px;     
   box-sizing: border-box;
-  margin: 0 auto;       /* center each card */
-  height: auto;         /* allow height to grow with content */
+  margin: 0 auto;       
+  height: auto;         
 }
 
-/* Ensure images scale inside the stacked cards */
 main img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Optional: reduce padding on headings inside the cards */
 main h1 {
   padding-left: 0;
   padding-top: 30px;
