@@ -494,12 +494,15 @@ footer h1 {
     background-image: url("https://static.wixstatic.com/media/28c15a232093473db2f64e3aba1e7b87.jpg/v1/fill/w_562,h_908,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/28c15a232093473db2f64e3aba1e7b87.jpg");
     min-width: 300px;
     height: 400px;
-    background-size: 100% 100%;
-    background-position:center center center center;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     margin-right: 30px;
     border: 1px solid black;
 }
+
+
+
 
 .lefttext1 {
     max-height: 400px;
@@ -515,8 +518,9 @@ footer h1 {
     background-image: url("https://static.wixstatic.com/media/1e5f0a813fe34326889f97e0f9e6aa05.jpg/v1/fill/w_562,h_906,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1e5f0a813fe34326889f97e0f9e6aa05.jpg");
     min-width: 300px;
     height: 400px;
-    background-size: 100% 100%;
-    background-position:center center center center;
+    /* preserve aspect ratio and crop when needed instead of stretching */
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     margin-right: 30px;
     border: 1px solid black;
@@ -536,8 +540,9 @@ footer h1 {
     background-image: url("https://static.wixstatic.com/media/11062b_24c3911afe9948e999ae3bce716bca99~mv2.jpg/v1/fill/w_794,h_906,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_24c3911afe9948e999ae3bce716bca99~mv2.jpg");
     min-width: 300px;
     height: 400px;
-    background-size: 100% 100%;
-    background-position:center center center center;
+    /* preserve aspect ratio and crop when needed instead of stretching */
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     margin-right: 30px;
     border: 1px solid black;
@@ -730,6 +735,14 @@ footer h1 {
     .person1 .rightimg3 {
         min-width: 100%;
         min-height: 500px;
+}
+
+.rightimg2 {
+    background-position: top;
+}
+
+.rightimg1 {
+    background-position:top;
 }
 
 @media screen and (min-width:950px) {
